@@ -9,7 +9,7 @@ Fighting = False
 
 #移动记录（j）
 MoveRecord = 0
-MoveMaxTry = 40
+MoveMaxTry = 50
 
 #连续杀怪数量
 KillMonster = 0
@@ -74,8 +74,8 @@ def rest():
     global KillMonster
     if KillMonster > 2:
         KillMonster = 0
-        pyautogui.sleep(20)
         pyautogui.press('f8')
+        pyautogui.sleep(20)
 
 #wow正在前台
 def isWowForeground():
